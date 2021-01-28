@@ -15,7 +15,7 @@
         <button @click="addToList">Click me</button>
 
         <ul>
-          <li v-for="element in list">{{element}} <button v-model=list[i] v-on:keyup.enter="remove">Delete</button> </li>
+          <li v-for="(element,index) in list">{{element}} <button  @click="remove(index)">Delete</button> </li>
         </ul>
 
       </div>

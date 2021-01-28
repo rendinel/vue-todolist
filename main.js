@@ -10,8 +10,8 @@ new Vue({
     addToList: function() {
       this.list.push(this.toDo);
     },
-    remove: function()  {
-     console.log(list[i])
+    remove: function(index) {
+     this.list.splice(index,1);
     }
   }
 });
