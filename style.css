@@ -1,1 +1,23 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.todolist{
+  list-style: none;
+  width: 300px;
+  background-color: lightgray;
+  border-radius: 25px;
+}
+
+.todolist > li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 45px;
+  border-bottom: 1px solid black;
+}

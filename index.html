@@ -9,14 +9,23 @@
     </head>
     <body>
 
-      <div id="app">
+      <div id="app" class="container">
 
-        <input v-model="toDo" v-on:keyup.enter="addToList" placeholder="Inserisci una faccenda">
-        <button @click="addToList">Click me</button>
+        <div class="logo">
+          <h1>BOOLEAN</h1>
+        </div>
 
-        <ul>
-          <li v-for="(element,index) in list">{{element}} <button  @click="remove(index)">Delete</button> </li>
-        </ul>
+
+        <div>
+          <input v-model="toDo" v-on:keyup.enter="addToList" placeholder="Inserisci una faccenda">
+          <button @click="addToList">Click me</button>
+        </div>
+
+        <div>
+          <ul class="todolist">
+            <li v-for="(element,index) in list">{{element}} <button  @click="remove(index)">Delete</button> </li>
+          </ul>
+        </div>
 
       </div>
 
