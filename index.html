@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>Snackish</title>
+    </head>
+    <body>
+
+      <div id="app">
+
+        <input v-model="toDo" v-on:keyup.enter="addToList" placeholder="Inserisci una faccenda">
+        <button @click="addToList">Click me</button>
+
+        <ul>
+          <li v-for="element in list">{{element}} <button v-model=list[i] v-on:keyup.enter="remove">Delete</button> </li>
+        </ul>
+
+      </div>
+
+
+        <script src="main.js"></script>
+    </body>
+</html>
